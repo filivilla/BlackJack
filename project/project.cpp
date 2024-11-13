@@ -5,6 +5,7 @@
 #include <random>//preporcessing directive for random function
 #include <string>//preprocessing directive for string functions
 #include <fstream>//preprocessing directive for file functions 
+#include"file.h"//access to class 
 using namespace std;//name change for cin and cout
 struct deck{//struct deck to hold the suits 
 string Hearts[13] = {"2", "3", "4", "5", "6", "7", "8", "9", "10", "Jack", "Queen", "King", "Ace",}//heart suit
@@ -13,6 +14,9 @@ string Clubs[13] = {"2", "3", "4", "5", "6", "7", "8", "9", "10", "Jack", "Queen
 string Diamonds[13] = {"2", "3", "4", "5", "6", "7", "8", "9", "10", "Jack", "Queen", "King", "Ace",}; };//diamonds
 int main()//header file for main function 
 {
+    file object;//object for the class 
+
+
     ifstream inputfile;//file to read from, to read player names
     ofstream outputfile;//file to write out, to write out player scores
 
@@ -24,14 +28,9 @@ int main()//header file for main function
     int x;//determining the ace value for dealer, variable declared
 
 
-    inputfile.open("Players.txt");
-    outputfile.open("Score.out");
+    object.open_file(inputfile,outputfile,"Players.txt","Score.out");//opens the two files, and checks if txt file is open
 
-    if(!inputfile)
-    {
-        cout << "Unable to find file";
-        return 1;
-    }
+    
 
     
 
