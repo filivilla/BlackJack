@@ -17,7 +17,7 @@ int main()//header file for main function
     file object;//object for the class 
 
 
-    ifstream inputfile;//file to read from, to read player names
+    ifstream inputfile("Players.txt");//file to read from, to read player names
     ofstream outputfile;//file to write out, to write out player scores
 
     deck card;//struct object to be able to use the different sets 
@@ -28,7 +28,7 @@ int main()//header file for main function
     int x;//determining the ace value for dealer, variable declared
 
 
-    object.open_file(inputfile,outputfile,"Players.txt","Score.out");//opens the two files, and checks if txt file is open
+    object.checks_file(inputfile);// if txt file is open
 
     
 

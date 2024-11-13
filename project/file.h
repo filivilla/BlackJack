@@ -2,6 +2,6 @@
 using namespace std;
 class file{
     public:
-    int open_file(ifstream& x,ofstream& y,string name1, string name2);
+    int checks_file(ifstream& x);
     void input_info(ifstream& x,int& num_players);
 };

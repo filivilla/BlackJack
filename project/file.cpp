@@ -1,11 +1,10 @@
 #include"file.h"
 #include <iostream>
+#include<fstream>
 using namespace std;
 
-int file::open_file(ifstream& x,ofstream& y,string name1 ,string name2)
+int file::checks_file(ifstream& x)
 {
-    x.open(name1);
-    y.open(name2);
     if (!x)
     {
         cout << "file not found";
@@ -13,8 +12,9 @@ int file::open_file(ifstream& x,ofstream& y,string name1 ,string name2)
     }
 }
 
+
+//TODO:add player names to the file 
 void file::input_info(ifstream& x,int& num_players)
 {
     cout << "Enter the number of players: ";
-    x <<  
 }
