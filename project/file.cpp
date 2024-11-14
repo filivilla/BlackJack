@@ -3,7 +3,7 @@
 #include<fstream>
 using namespace std;
 
-int file::open_file(fstream& x,ofstream& y,string name1 ,string name2)
+int file::open_file(fstream& x,ofstream& y)
 {
     if (!x)
     {
