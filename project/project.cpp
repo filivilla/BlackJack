@@ -17,9 +17,8 @@ int main()//header file for main function
     file object;//object for the class 
 
 
-    ifstream inputfile;//file to read from, to read player names
-    ofstream outputfile;//file to write out, to write out player scores
-
+    fstream inputfile;//file to read and write the players name and bet
+    ofstream outfile;//file to write out the players final scores and ranking
     deck card;//struct object to be able to use the different sets 
 
     int num_players;//number of players,declared variable
@@ -28,17 +27,17 @@ int main()//header file for main function
     int x;//determining the ace value for dealer, variable declared
 
 
-    object.open_file(inputfile,outputfile,"Players.txt","Score.out");//opens the two files, and checks if txt file is open
+    object.open_file(inputfile,outfile,"Players.txt","Score.out");//opens the two files, and checks if txt file is open
 
     
 
     
 
-    x = 21 - dealer;//ace
+    /*x = 21 - dealer;//ace
     dealer += x;//adds the ace value to the dealers hand
 
     srand(time(0));//seed the random function to be able to find what card is drawn 
+    */
+    return 0;//returns 0
 
-    
-
-}
+}//end main 
