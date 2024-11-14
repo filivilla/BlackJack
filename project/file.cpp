@@ -1,11 +1,10 @@
 #include"file.h"
 #include <iostream>
+#include<fstream>
 using namespace std;
 
 int file::open_file(fstream& x,ofstream& y,string name1 ,string name2)
 {
-    x.open(name1);
-    y.open(name2);
     if (!x)
     {
         cout << "file not found";
