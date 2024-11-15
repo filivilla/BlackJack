@@ -27,8 +27,11 @@ int main()//header file for main function
     int dealer;//dealers score , variable declared
     int x;//determining the ace value for dealer, variable declared
 
-
-    object.open_file(inputfile,outputfile);// if txt file is open
+    if(!inputfile)//checks if the file was opened or not
+    {
+        cout << "File not found";
+        return 1;//terminates the program 
+    }//end if 
 
     
 
