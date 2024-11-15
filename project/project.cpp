@@ -17,7 +17,7 @@ int main()//header file for main function
     file object;//object for the class 
 
 
-    fstream inputfile("Players.txt");//file to read from, to read player names
+    ifstream inputfile("Players.txt");//file to read from, to read player names
     ofstream outputfile("Score.out");//file to write out, to write out player scores
 
     deck card;//struct object to be able to use the different sets 

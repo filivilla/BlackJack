@@ -3,7 +3,7 @@
 #include<fstream>
 using namespace std;
 
-int file::open_file(fstream& x,ofstream& y)
+int file::open_file(ifstream& x,ofstream& y)
 {
     if (!x)
     {
@@ -12,7 +12,7 @@ int file::open_file(fstream& x,ofstream& y)
     }
 }
 
-void file::input_info(fstream& x,int& num_players)
+void file::input_info(ifstream& x,int& num_players)
 {
     cout << "Enter the number of players: ";
     
