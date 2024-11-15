@@ -33,7 +33,7 @@ int main()//header file for main function
         return 1;//terminates the program 
     }//end if 
 
-    
+    object.input_info(inputfile,num_players);
 
     
 
